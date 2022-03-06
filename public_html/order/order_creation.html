@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Realizar pedido</title>
+    </head>
+    <body>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="../client_pages/main_client.html">Página principal</a></li>
+                    <li><a href="../client_pages/profile.html">Mi perfil</a></li>
+                    <li><a href="../client_pages/orders.html">Pedidos</a></li>
+                    <li><a href="../client_pages/favourites.html">Favoritos</a></li>
+                    <li><a href="../public_html/index.html">Salir</a></li>
+                </ul>
+            </nav>
+        </section>
+        <form action="./checkout.html">
+            <label for="client_name">Nombre(s)</label><br>
+            <input type="text" name="client_name" id="client_name" placeholder="Nombre(s)"><br>
+            <label for="client_lastname">Apellidos</label><br>
+            <input type="text" name="client_lastname" id="client_lastname" placeholder="Apellido(s)"><br>
+            <label for="client_phone">Teléfono</label><br>
+            <input type="tel" name="client_phone" id="client_phone" maxlength="10" placeholder="Teléfono"><br>
+            <label for="client_email">Correo electrónico</label><br>
+            <input type="email" name="client_email" id="client_email" placeholder="Correo eléctronico"><br>
+            <label for="client_address">Dirección</label><br>
+            <input type="text" name="client_address" id="client_address" placeholder="Dirección"><br>
+            <label for="delivery_date">Fecha de entrega</label><br>
+            <input type="date" name="delivery_date" id="delivery_date"placeholder="Fecha de entrega"><br><br>
+            <h4>Elige un sabor: </h4>
+            <select name="cake_flavour" id="cake_flour">
+                <option value="asteroide">Asteroide</option>
+                <option value="nucleo_solar">Núcleo solar</option>
+                <option value="corteza_solar">Corteza solar</option>
+                <option value="frio_espacial">Frio espacial</option>
+                <option value="superficie_lunar">Superficie lunar</option>
+                <option value="vacio_espacial">Vacio espacial</option>
+                <option value="eclipse">Eclipse</option>
+            </select>
+            <h4>Elige la(s) decoracion(es):</h4>
+            <label for="cinturon_asteroides">Cinturón de asteroides</label>
+            <input type="checkbox" name="cinturon_asteroides" id="cinturon_asteroides" value="Cinturón de asteroides"><br>
+            <label for="estrella_fugaz">Estrella fugaz</label>
+            <input type="checkbox" name="estrella_fugaz" id="estrella_fugaz" value="Estrella fugaz"><br>
+            <label for="polvo_estelar">Polvo estelar</label>
+            <input type="checkbox" name="polvo_estelar" id="polvo_estelar" value="Polvo estelar"><br>
+            <label for="supernova">Supernova</label>
+            <input type="checkbox" name="supernova" id="supernova" value="Supernova"><br>
+            <label for="nube_cosmica">Nube cósmica</label>
+            <input type="checkbox" name="supernova" id="supernova" value="Supernova"><br>
+            <br>
+            <input type="submit" value="Hacer pedido">
+        </form>
+    </body>
+</html>
